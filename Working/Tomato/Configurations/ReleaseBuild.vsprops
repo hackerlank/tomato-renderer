@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ks_c_5601-1987"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="ReleaseBuild"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		EnableIntrinsicFunctions="true"
+		PreprocessorDefinitions="_RELEASE;NDEBUG"
+		RuntimeLibrary="2"
+		EnableFunctionLevelLinking="true"
+		DebugInformationFormat="3"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		LinkIncremental="1"
+	/>
+</VisualStudioPropertySheet>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ks_c_5601-1987"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Common"
+	OutputDirectory="$(SolutionDir)Output\$(ConfigurationName)\"
+	IntermediateDirectory="$(SolutionDir)Interm\$(ConfigurationName)\"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		UsePrecompiledHeader="2"
+		PrecompiledHeaderThrough="$(ProjectName)PCH.h"
+		WarningLevel="4"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		GenerateDebugInformation="true"
+	/>
+</VisualStudioPropertySheet>

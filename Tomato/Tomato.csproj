@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{201AAAB7-1668-4DB4-8935-A635DA125D54}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tomato</RootNamespace>
+    <AssemblyName>Tomato</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\Buffer.cs" />
+    <Compile Include="Collections\IExecutableItem.cs" />
+    <Compile Include="Collections\ExecutableCollectionItemEventHandler.cs" />
+    <Compile Include="Collections\ExecutableCollectionEventHandler.cs" />
+    <Compile Include="Collections\ExecutableCollection.cs" />
+    <Compile Include="Concurrency\IPoolable.cs" />
+    <Compile Include="Concurrency\Pool.cs" />
+    <Compile Include="Concurrency\Queue.cs" />
+    <Compile Include="EventLogger\EventLog.cs" />
+    <Compile Include="EventLogger\EventLogger.cs" />
+    <Compile Include="EventLogger\EventMessageLog.cs" />
+    <Compile Include="IO\MessageStream.cs" />
+    <Compile Include="MathHelper.cs" />
+    <Compile Include="Network\Packetizer.cs" />
+    <Compile Include="Network\SmtpClient.cs" />
+    <Compile Include="Network\TcpClient\TcpClient.cs" />
+    <Compile Include="Network\TcpServer\TcpServer.ClientContext.cs" />
+    <Compile Include="Network\TcpServer\TcpServer.Contexts.cs" />
+    <Compile Include="Network\TcpServer\TcpServer.cs" />
+    <Compile Include="Network\TcpServer\TcpServer.NetworkCallbacks.cs" />
+    <Compile Include="Network\TcpServer\TcpServer.Packet.cs" />
+    <Compile Include="Network\Utility.cs" />
+    <Compile Include="Text\StringTokenizer.cs" />
+    <Compile Include="Win32\Macro.cs" />
+    <Compile Include="Algorithm\Graph\ConnectivitySolver\IConnectivitySolver.cs" />
+    <Compile Include="Algorithm\Graph\ConnectivitySolver\QuickFind.cs" />
+    <Compile Include="Algorithm\Graph\ConnectivitySolver\QuickUnion.cs" />
+    <Compile Include="Algorithm\Graph\ConnectivitySolver\WeightedQuickUnion.cs" />
+    <Compile Include="Algorithm\Graph\ConnectivitySolver\WeightedQuickUnionWithHalving.cs" />
+    <Compile Include="Algorithm\Graph\Cycle.cs" />
+    <Compile Include="Algorithm\Graph\Graph.cs" />
+    <Compile Include="Algorithm\Graph\Graph\SimpleGraphWithAdjacencyList.cs" />
+    <Compile Include="Algorithm\Graph\Graph\SimpleGraphWithAdjacencyMatrix.cs" />
+    <Compile Include="Algorithm\Graph\Path.cs" />
+    <Compile Include="Algorithm\Graph\PathFinder\EulerPath.cs" />
+    <Compile Include="Algorithm\Graph\PathFinder\PathFinder.cs" />
+    <Compile Include="Algorithm\Graph\PathFinder\SimplePath.cs" />
+    <Compile Include="Algorithm\Graph\Search\DepthFirstSearch.cs" />
+    <Compile Include="Algorithm\Graph\Search\GraphSearch.cs" />
+    <Compile Include="Algorithm\Graph\VertexDegree.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Win32\Constants.cs" />
+    <Compile Include="Win32\_Structure\WINDOWPLACEMENT.cs" />
+    <Compile Include="Win32\Platform.cs" />
+    <Compile Include="Win32\_Structure\SYSTEM_INFO.cs" />
+    <Compile Include="Win32\_Structure\MSG.cs" />
+    <Compile Include="Win32\_Structure\POINT.cs" />
+    <Compile Include="Win32\NativeMethods.cs" />
+    <Compile Include="Win32\_Structure\RECT.cs" />
+    <Compile Include="Xml\XmlSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Algorithm\Sorting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

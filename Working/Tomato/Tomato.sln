@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tomato", "Tomato\Tomato.vcproj", "{023BAD38-9CE6-4D7F-9573-97F720526A00}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestApplication", "TestApplication\TestApplication.vcproj", "{CBFDFE53-119E-4752-AC33-22CD560F19F5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{023BAD38-9CE6-4D7F-9573-97F720526A00} = {023BAD38-9CE6-4D7F-9573-97F720526A00}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugDll|Win32 = DebugDll|Win32
+		Release|Win32 = Release|Win32
+		ReleaseDll|Win32 = ReleaseDll|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{023BAD38-9CE6-4D7F-9573-97F720526A00}.Debug|Win32.ActiveCfg = Debug|Win32
+		{023BAD38-9CE6-4D7F-9573-97F720526A00}.Debug|Win32.Build.0 = Debug|Win32
+		{023BAD38-9CE6-4D7F-9573-97F720526A00}.DebugDll|Win32.ActiveCfg = DebugDll|Win32
+		{023BAD38-9CE6-4D7F-9573-97F720526A00}.DebugDll|Win32.Build.0 = DebugDll|Win32
+		{023BAD38-9CE6-4D7F-9573-97F720526A00}.Release|Win32.ActiveCfg = Release|Win32
+		{023BAD38-9CE6-4D7F-9573-97F720526A00}.Release|Win32.Build.0 = Release|Win32
+		{023BAD38-9CE6-4D7F-9573-97F720526A00}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{023BAD38-9CE6-4D7F-9573-97F720526A00}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+		{CBFDFE53-119E-4752-AC33-22CD560F19F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBFDFE53-119E-4752-AC33-22CD560F19F5}.Debug|Win32.Build.0 = Debug|Win32
+		{CBFDFE53-119E-4752-AC33-22CD560F19F5}.DebugDll|Win32.ActiveCfg = DebugDll|Win32
+		{CBFDFE53-119E-4752-AC33-22CD560F19F5}.DebugDll|Win32.Build.0 = DebugDll|Win32
+		{CBFDFE53-119E-4752-AC33-22CD560F19F5}.Release|Win32.ActiveCfg = Release|Win32
+		{CBFDFE53-119E-4752-AC33-22CD560F19F5}.Release|Win32.Build.0 = Release|Win32
+		{CBFDFE53-119E-4752-AC33-22CD560F19F5}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{CBFDFE53-119E-4752-AC33-22CD560F19F5}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

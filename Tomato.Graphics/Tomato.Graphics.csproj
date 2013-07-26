@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{2B2129AC-D97A-47F5-A7E2-F5393E40007D}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tomato.Graphics</RootNamespace>
+    <AssemblyName>Tomato.Graphics</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>1b94551b-2d65-4527-9aa9-153d1488f1c3</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CameraController\CameraController.cs" />
+    <Compile Include="CameraController\FlyCameraController.cs" />
+    <Compile Include="CameraController\ModelViewCameraController.cs" />
+    <Compile Include="CameraController\ScreenArcBall.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridExpandableObjectConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridIntConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridBoolConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridIntArrayConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridUIntConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridUIntArrayConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridFloatConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridFloatArrayConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridDoubleConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridDoubleArrayConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridBoolArrayConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridVector2Converter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridVector3Converter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridVector4Converter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridMatrixConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridTypes\ConsoleGridIntArray.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Console\ConsoleGrid\ConsoleGridConverter\ConsoleGridStringConverter.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridItem.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridItemCollection.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridTypes\ConsoleGridUIntArray.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridTypes\ConsoleGridFloatArray.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridTypes\ConsoleGridDoubleArray.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridTypes\ConsoleGridBoolArray.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridTypes\ConsoleGridVector2.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridTypes\ConsoleGridVector3.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridTypes\ConsoleGridVector4.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridFloatValueEditor\ConsoleGridFloatValueEditor.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridFloatValueEditor\ConsoleGridFloatValueEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Console\ConsoleGrid\ConsoleGridFloatValueEditor\ConsoleGridFloatValueEditorForm.designer.cs">
+      <DependentUpon>ConsoleGridFloatValueEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Console\ConsoleGrid\ConsoleGridTypes\ConsoleGridMatrix.cs" />
+    <Compile Include="Console\ConsoleGrid\ConsoleGridItemDescriptor.cs" />
+    <Compile Include="Console\ConsoleInterface\ConsoleInterface.cs" />
+    <Compile Include="Console\ConsoleInterface\ConsoleInterface.Get.cs" />
+    <Compile Include="Console\ConsoleInterface\ConsoleInterfaceManager.cs" />
+    <Compile Include="Console\ConsoleInterface\ConsoleMessageType.cs" />
+    <Compile Include="Console\ConsoleVariable\ConsoleVariable.cs" />
+    <Compile Include="Console\ConsoleVariable\ConsoleVariable.Stream.cs" />
+    <Compile Include="Console\ConsoleVariable\ConsoleVariable.Text.cs" />
+    <Compile Include="Console\ConsoleVariable\ConsoleVariableCollection.cs" />
+    <Compile Include="Console\ConsoleVariable\ConsoleVariableValueType.cs" />
+    <Compile Include="Content\ContentReaderHelper.cs" />
+    <Compile Include="Content\Model\ModelMeshPart.cs" />
+    <Compile Include="Content\Model\ModelMesh.cs" />
+    <Compile Include="Content\Model\ModelReader.cs" />
+    <Compile Include="Content\Model\Model.cs" />
+    <Compile Include="Input\MouseButtons.cs" />
+    <Compile Include="Renderer\TextureSamplerCollection.cs" />
+    <Compile Include="Renderer\LightPrePassRenderer\OcclusionPass.cs" />
+    <Compile Include="Renderer\RenderPass\FullScreenRenderPass\PostProcessRenderPass\GaussianBlurPass.cs" />
+    <Compile Include="Renderer\TextureSampler.cs" />
+    <Compile Include="SceneGraph\Light\LightType.cs" />
+    <Compile Include="WinFormsConverter.cs" />
+    <Compile Include="Input\KeyboardKeys.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderer\LightPrePassRenderer\LightingPass.cs" />
+    <Compile Include="Renderer\LightPrePassRenderer\LightPrePassRenderer.cs" />
+    <Compile Include="Renderer\LightPrePassRenderer\FinalPass.cs" />
+    <Compile Include="Renderer\Renderer\Renderer.Buffer.cs" />
+    <Compile Include="Renderer\Renderer\Renderer.RenderTarget.cs" />
+    <Compile Include="Renderer\Renderer\Renderer.Texture.cs" />
+    <Compile Include="Renderer\Renderer\Renderer.Effect.cs" />
+    <Compile Include="Renderer\Renderer\Renderer.Render.cs" />
+    <Compile Include="Renderer\Renderer\Renderer.cs" />
+    <Compile Include="Renderer\RenderPass\SceneRenderPass\SceneRenderPass.cs" />
+    <Compile Include="Renderer\RenderPass\FullScreenRenderPass\FullScreenRenderPass.cs" />
+    <Compile Include="Renderer\RenderPass\RenderPass.cs" />
+    <Compile Include="Renderer\RenderStage\RenderStage.cs" />
+    <Compile Include="Renderer\RenderTechnique\RenderTechnique.cs" />
+    <Compile Include="SceneGraph\Camera\Camera.cs" />
+    <Compile Include="SceneGraph\RenderableObject\Mesh\SubMesh.cs" />
+    <Compile Include="SceneGraph\RenderableObject\RenderableObject.cs" />
+    <Compile Include="SceneGraph\RenderableObject\Mesh\Mesh.cs" />
+    <Compile Include="SceneGraph\SceneDescription\SceneDescriptionLightEntry.cs" />
+    <Compile Include="SceneGraph\SceneDescription\SceneDescriptionCameraEntry.cs" />
+    <Compile Include="SceneGraph\SceneDescription\SceneDescriptionXnaModelEntry.cs" />
+    <Compile Include="SceneGraph\SceneDescription\SceneDescriptionModelEntry.cs" />
+    <Compile Include="SceneGraph\SceneDescription\SceneDescriptionEntry.cs" />
+    <Compile Include="SceneGraph\SceneDescription\SceneDescription.cs" />
+    <Compile Include="SceneGraph\SceneObject\SceneObject.CreateFromSceneDescription.cs" />
+    <Compile Include="SceneGraph\SceneObject\SceneObject.CreateFromModel.cs" />
+    <Compile Include="SceneGraph\SceneCuller.cs" />
+    <Compile Include="SceneGraph\Light\Light.cs" />
+    <Compile Include="SceneGraph\Node\Node.cs" />
+    <Compile Include="SceneGraph\SceneObject\SceneObjectType.cs" />
+    <Compile Include="RenderStates\ObjectMaterialState\ObjectMaterialState.cs" />
+    <Compile Include="SceneGraph\SceneObject\SceneObject.cs" />
+    <Compile Include="SceneGraph\Transformation.cs" />
+    <Compile Include="SceneGraph\UpdateContext.cs" />
+    <Compile Include="RenderStates\BlendingState\BlendingMode.cs" />
+    <Compile Include="RenderStates\BlendingState\BlendingOperation.cs" />
+    <Compile Include="RenderStates\BlendingState\BlendingState.cs" />
+    <Compile Include="RenderStates\BlendingState\ColorWriteMask.cs" />
+    <Compile Include="RenderStates\DepthStencilState\CompareFunction.cs" />
+    <Compile Include="RenderStates\RasterizerState\CullMode.cs" />
+    <Compile Include="RenderStates\DepthStencilState\DepthStencilOperation.cs" />
+    <Compile Include="RenderStates\DepthStencilState\DepthStencilState.cs" />
+    <Compile Include="RenderStates\DepthStencilState\DepthWriteMask.cs" />
+    <Compile Include="RenderStates\RasterizerState\FillMode.cs" />
+    <Compile Include="RenderStates\RasterizerState\RasterizerState.cs" />
+    <Compile Include="RenderStates\RenderState.cs" />
+    <Compile Include="RenderStates\RenderStateSet.cs" />
+    <Compile Include="RenderStates\RenderStateType.cs" />
+    <Compile Include="RenderStates\DepthStencilState\StencilOperation.cs" />
+    <Compile Include="Vertex\DirectionalLightVertex.cs" />
+    <Compile Include="Vertex\PointLightVertex.cs" />
+    <Compile Include="Vertex\SpotLightVertex.cs" />
+    <Compile Include="WinForms\GraphicsDeviceService.cs" />
+    <Compile Include="WinForms\ServiceContainer.cs" />
+    <Compile Include="WinForms\XnaControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinForms\XnaPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XnaConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tomato.Graphics.Content\Tomato.Graphics.Content.contentproj">
+      <Project>{8B6D14BD-8208-4C48-ADC1-9663E358EDB2}</Project>
+      <Name>Tomato.Graphics.Content</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+    <ProjectReference Include="..\Tomato\Tomato.csproj">
+      <Project>{201AAAB7-1668-4DB4-8935-A635DA125D54}</Project>
+      <Name>Tomato</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Console\ConsoleGrid\ConsoleGrid.resx">
+      <DependentUpon>ConsoleGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Console\ConsoleGrid\ConsoleGridFloatValueEditor\ConsoleGridFloatValueEditorForm.resx">
+      <DependentUpon>ConsoleGridFloatValueEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
